@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- P5 libraries -->
+		<script language="javascript" type="text/javascript" src="../libraries/p5.js"></script>
+
+		<!-- A-Frame libraries -->
+		<script language="javascript" type="text/javascript" src="../libraries/aframe.min.js"></script>
+
+		<!-- AFrameP5 library -->
+		<script language="javascript" type="text/javascript" src="../libraries/aframep5.js"></script>
+
+		<!-- P5 Sketch -->
+		<script language="javascript" type="text/javascript" src="sketch.js"></script>
+
+		<script src="../p5/addons/p5.sound.js" type="text/javascript"></script>
+
+		<!-- custom styles -->
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- container to hold our VR scene - make sure to give this element an ID of 'VRScene' -->
+	    <a-scene id="VRScene">
+
+
+			<a-assets id="VRAssets">
+
+
+				<img src="background.jpg" id="sky1"></a-assets>
+
+					<a-sky src="background.jpg" rotation="0 -130 0"></a-sky>
+
+			</a-assets>
+
+
+	    </a-scene>
+
+
+
+
+
+					<a-assets id="VRAssets">
+						<img id="stone" src="images/stonebrick_mossy.png" />
+						<a-asset id="charmander" src="images/charmander.dae"></a-asset>
+						<a-asset id="robot_obj" src="images/robot/model.obj"></a-asset>
+						<a-asset id="robot_mtl" src="images/robot/materials.mtl"></a-asset>
+					</a-assets>
+
+
+
+			    </a-scene>
+
+	</body>
+</html>
